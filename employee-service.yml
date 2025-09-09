@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: employee-service
   jpa:
     hibernate:
       ddl-auto: update
@@ -31,9 +29,6 @@ resilience4j:
       departmentService:
         maxAttempts: 3
         waitDuration: 2s
-
-server:
-  port: 8080
 
 employee:
   cache-enabled: true
