@@ -3,7 +3,3 @@ server:
 spring:
   application:
     name: department-service
-  config:
-    import: configserver:http://localhost:8888
-
-
