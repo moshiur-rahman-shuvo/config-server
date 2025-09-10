@@ -1,3 +1,10 @@
 spring:
-  application:
-    name: department-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3307/departments_db
+    username: myuser
+    password: mypass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  show-sql: true

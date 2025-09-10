@@ -1,3 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/mployees_db
+    username: myuser
+    password: mypass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  show-sql: true
 resilience4j:
   circuitbreaker:
     instances:
